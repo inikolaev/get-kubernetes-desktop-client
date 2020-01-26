@@ -4,9 +4,17 @@ Kubernetes desktop client which allows to open terminal into a pod with a click 
 
 NOTE: This software is still work in progress
 
+## Features
+
+* Connect to running pod session, similar to what `kubectl exec -it pod-name` does
+* Switch between different contexts and namespaces
+* Search pod by labels
+
 ## Known Issues
 
 * If token used by `kubectl` is expired, application will refresh it, but not save into `~/.kube/config`. This will cause `kubectl` break with error `Refresh token is invalid or has already been claimed by another client.`. The solution for now is to list some resources using `kubectl` in a corresponding context first, e.g.: `kubectl get pods`. After that everything will work fine, untill token expires again.
+
+* List of pods is not updated automatically and requires manual update at the moment
 
 ## Screenshots
 
