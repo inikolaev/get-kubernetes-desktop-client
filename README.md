@@ -9,6 +9,7 @@ NOTE: This software is still work in progress
 * Connect to running pod session, similar to what `kubectl exec -it pod-name` does
 * Switch between different contexts and namespaces
 * Search pod by labels
+* View container logs
 
 ## Known Issues
 
