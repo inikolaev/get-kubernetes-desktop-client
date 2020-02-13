@@ -19,13 +19,23 @@ NOTE: This software is still work in progress
 
 * Opening terminal into a pod may not work in clusters which restrict to only using POST requests when connection to the terminal. This application uses WebSocket which requires to issue a GET request as part of it's handshake. `kubectl` doesn't use WebSocket, it uses SPDY.
 
+## Troubleshooting
+
+For easier troubleshooting run application from command line:
+
+```bash
+$ /Applications/Kubernetes\ Desktop\ Client.app/Contents/MacOS/Kubernetes\ Desktop\ Client
+```
+
+This way application logs will be pronted in console and it will help to figure out what the problem is.
+
+## Downloads
+
+All versions are available in [releases](https://github.com/inikolaev/get-kubernetes-desktop-client/releases).
+
 ## Screenshots
 
 <img src="images/screen-1.png">
 <img src="images/screen-2.png">
 <img src="images/screen-3.png">
 <img src="images/screen-4.png">
-
-## Downloads
-
-All versions are available in [releases](https://github.com/inikolaev/get-kubernetes-desktop-client/releases).
