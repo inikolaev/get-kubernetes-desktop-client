@@ -17,8 +17,6 @@ NOTE: This software is still work in progress
 
 * List of pods is not updated automatically and requires manual update at the moment
 
-* Opening terminal into a pod may not work in clusters which restrict to only using POST requests when connection to the terminal. This application uses WebSocket which requires to issue a GET request as part of it's handshake. `kubectl` doesn't use WebSocket, it uses SPDY.
-
 ## Troubleshooting
 
 For easier troubleshooting run application from command line:
